@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+  --main-color: darkcyan;
+}
+
 body {
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
@@ -46,7 +50,7 @@ h1 {
 
 #modelinput:focus {
   outline: none;
-  border-bottom: 1px solid darkcyan;
+  border-bottom: 1px solid var(--main-color);
 }
 
 #modelinput::placeholder {
@@ -57,4 +61,14 @@ h1 {
   font-size:0.9em;
   text-align: center;
   padding: 0 40px;
+}
+
+a:link, a:visited, a:active {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  filter:brightness(130%)
 }
