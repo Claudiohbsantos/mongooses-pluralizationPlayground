@@ -72,3 +72,20 @@ a:link, a:visited, a:active {
 a:hover {
   filter:brightness(130%)
 }
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+.footer-icon {
+  margin: 10px;
+  width: 30px;
+  opacity: 0.4;
+  transition: opacity 300ms;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
